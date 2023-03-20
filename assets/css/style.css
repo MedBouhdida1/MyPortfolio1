@@ -25,6 +25,24 @@ body {
     background: #fff
 }
 
+.email {
+    font-size: 16px;
+}
+
+.email a,
+.address a {
+    color: #999;
+}
+
+.email a:hover,
+.address a:hover {
+    color: #0d6efd;
+}
+
+.contact {
+    color: #28e98c;
+}
+
 img {
     max-width: 100%
 }
@@ -172,11 +190,12 @@ ul {
     background: var(--primary_color)
 }
 
+/* 
 #scroll-section {}
 
 .scroll-content {}
 
-main.drake-main {}
+main.drake-main {} */
 
 .page-section {
     overflow: hidden
@@ -2160,22 +2179,4 @@ body .body-overlay {
     }
 
 
-}
-
-.email {
-    font-size: 16px;
-}
-
-.email a,
-.address a {
-    color: #999;
-}
-
-.email a:hover,
-.address a:hover {
-    color: #0d6efd;
-}
-
-.contact {
-    color: #28e98c;
 }
