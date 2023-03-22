@@ -22,6 +22,14 @@ $(function () {
             $('#testimonial-slide-count1').html("<span class='left'>" + item + "</span> / " + items)
         }
     }
+    if ($('.carousel3').length) {
+        var testimonial2 = $('.carousel3').owlCarousel({ items: 1, margin: 30, stagePadding: 0, smartSpeed: 450, autoHeight: true, loop: false, nav: false, dots: false, onInitialized: counter, onTranslated: counter }); $('.testimonial-nav .next3').on('click', function () { testimonial2.trigger('next.owl.carousel'); })
+        $('.testimonial-nav .prev3').on('click', function () { testimonial2.trigger('prev.owl.carousel', [300]); })
+        function counter(event) {
+            var element = event.target; var items = event.item.count; var item = event.item.index + 1; if (item > items) { item = item - items }
+            $('#testimonial-slide-count2').html("<span class='left'>" + item + "</span> / " + items)
+        }
+    }
     window.addEventListener('scroll', { scroll_animations, });
 }); function scroll_animations() { var defaults = { duration: 1.2, ease: "power4.out", animation: "fade_from_bottom", once: !1, }; gsap.utils.toArray(".scroll-animation").forEach(function (box) { var gsap_obj = {}; var settings = { duration: box.dataset.animationDuration || defaults.duration, }; var animations = { fade_from_bottom: { y: 180, opacity: 0, }, fade_from_top: { y: -180, opacity: 0, }, fade_from_left: { x: -180, opacity: 0, }, fade_from_right: { x: 180, opacity: 0, }, fade_in: { opacity: 0, }, rotate_up: { y: 180, rotation: 10, opacity: 0, }, }; var scroll_trigger = { scrollTrigger: { trigger: box, once: defaults.once, start: "top bottom+=20%", toggleActions: "play none none reverse", markers: !1, }, }; jQuery.extend(gsap_obj, settings); jQuery.extend(gsap_obj, animations[box.dataset.animation || defaults.animation]); jQuery.extend(gsap_obj, scroll_trigger); gsap.from(box, gsap_obj); }); }
 scroll_animations();
