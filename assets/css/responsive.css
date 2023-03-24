@@ -396,6 +396,14 @@
     .comments-area .comments .children {
         padding-left: 40px
     }
+
+    .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories li a {
+        padding: 7px 7px;
+    }
+
+    .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories {
+        left: 0px;
+    }
 }
 
 @media(max-width:425px) {

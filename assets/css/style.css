@@ -1116,14 +1116,14 @@ body .body-overlay {
     /* height: 370px; */
     overflow: hidden;
     position: relative;
-    margin-bottom: 30px
+    margin-bottom: 0px
 }
 
 
 
-.portfolio-items .portfolio-item.portfolio-full .portfolio-item-inner {
+/* .portfolio-items .portfolio-item.portfolio-full .portfolio-item-inner {
     height: 410px
-}
+} */
 
 .portfolio-items .portfolio-item .portfolio-item-inner img {
     display: block;
@@ -1132,7 +1132,7 @@ body .body-overlay {
 }
 
 .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -1176,7 +1176,7 @@ body .body-overlay {
 .testimonial-item .testimonial-item-inner {
     border: 2px solid #565656;
     border-radius: 30px;
-    padding: 50px 50px 43px
+    padding: 20px 20px 0px
 }
 
 .testimonial-item .testimonial-item-inner .author {
