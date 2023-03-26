@@ -107,6 +107,11 @@
               <i class="las la-certificate"></i> <span>Certifications</span>
             </a>
           </li>
+          <li>
+            <a class="scroll-to" href="#contact">
+              <i class="las la-envelope"></i> <span>Contact</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="sidebar-social">
@@ -160,6 +165,11 @@
     <li>
       <a class="scroll-to" href="#certifications">
         <span>Certifications</span> <i class="las la-certificate"></i>
+      </a>
+    </li>
+    <li>
+      <a class="scroll-to" href="#contact">
+        <span>Contact</span><i class="las la-envelope"></i>
       </a>
     </li>
   </ul>
@@ -1200,6 +1210,61 @@
           </div>
 
         </section>
+        <section class="contact-area page-section scroll-content" id="contact">
+          <div class="custom-container">
+            <div class="contact-content content-width">
+              <div class="section-header">
+                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                  <i class="las la-envelope"></i> contact
+                </h4>
+                <h1 class="scroll-animation" data-animation="fade_from_bottom">Let's Work <span>Together!</span></h1>
+              </div>
+
+              <p id="required-msg">* Marked fields are required to fill.</p>
+              <form class="contact-form scroll-animation" name="contactform" data-animation="fade_from_bottom"
+                action="https://formspree.io/f/meqwldkb" method="POST">
+                <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                  Your message was sent successfully.
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <label for="full-name">full Name <sup>*</sup></label>
+                      <input type="text" name="full-name" id="full-name" placeholder="Your Full Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <label for="email">Email <sup>*</sup></label>
+                      <input type="email" name="email" id="email" placeholder="Your email adress">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <label for="phone-number">phone <span>(optional)</span></label>
+                      <input type="text" name="phone-number" id="phone-number" placeholder="Your number phone">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <label for="message">message</label>
+                      <textarea name="message" id="message" placeholder="Write your message here ..."></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="input-group submit-btn-wrap">
+                      <button class="theme-btn" name="submit" type="submit" id="submit-form">send
+                        message</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </section>
+
 
 
 
@@ -1217,6 +1282,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/ajax-form.js"></script>
   <script src="assets/js/color.js"></script>
+
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
     integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
     data-cf-beacon='{"rayId":"7a9f60df6a8a4202","version":"2023.2.0","r":1,"token":"52ad871770524b3e8ca1e53094efe67a","si":100}'
