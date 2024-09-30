@@ -1138,7 +1138,7 @@ body .body-overlay {
     gap: 10px;
     align-items: center;
     bottom: 20px;
-    left: 20px
+    /* left: 20px */
 }
 
 .portfolio-items .portfolio-item .portfolio-item-inner .portfolio-categories li a {
